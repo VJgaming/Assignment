@@ -1,0 +1,46 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f4f4f4;
+}
+header {
+    background: #ff6347;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+nav a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+    color: yellow;
+}
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.card {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+}
+@media (max-width: 600px) {
+    .recipes {
+        flex-direction: column;
+        align-items: center;
+    }
+}
